@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.taitrts",
+  "appName": "Taitrts",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

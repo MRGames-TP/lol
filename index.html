@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Taitrts — Tetris Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Taitrts</h1>
+    <div class="board-wrap">
+      <canvas id="game" width="300" height="600" aria-label="Tetris game"></canvas>
+      <aside class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+        <div>Lines: <span id="lines">0</span></div>
+        <div class="next">
+          <div class="next-label">Next</div>
+          <canvas id="next" width="80" height="80" aria-hidden="true"></canvas>
+        </div>
+        <button id="start">Start / Restart</button>
+        <div class="controls">
+          <p>Controls:</p>
+          <p>← → move • ↑ rotate • ↓ soft drop • Space hard drop</p>
+        </div>
+      </aside>
+    </div>
+    <p class="note">Frontend demo — package as APK with CI (see README).</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
